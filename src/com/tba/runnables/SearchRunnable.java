@@ -49,6 +49,7 @@ public class SearchRunnable implements Runnable {
     // or the properties already exists, as most targets return the same properties after last page.
     // If retries exceed 5, search is terminated.
     @Override
+    @SuppressWarnings("unchecked")
     public void run() {
         Integer nextPageNumber = 0;
         List<Property> pageProperties = new ArrayList<>();
