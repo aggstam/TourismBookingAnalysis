@@ -9,17 +9,17 @@ External jars sqlite-jdbc-3.30.1.jar and jsoup-1.15.3.jar are provided.
 
 ## Usage
 First we compile the project:
-```
-% javac -cp libs/sqlite-jdbc-3.30.1.jar:libs/jsoup-1.15.3.jar src/**/*.java -d bin
+```shell
+$ javac -cp libs/sqlite-jdbc-3.30.1.jar:libs/jsoup-1.15.3.jar src/**/*.java -d bin
 ```
 Then we can execute:
-```
-% java -cp libs/sqlite-jdbc-3.30.1.jar:.:libs/jsoup-1.15.3.jar:.:bin com.tba.Main
+```shell
+$ java -cp libs/sqlite-jdbc-3.30.1.jar:.:libs/jsoup-1.15.3.jar:.:bin com.tba.Main
 ```
 
 ## Execution example
-```
-❯ java -cp libs/sqlite-jdbc-3.30.1.jar:.:libs/jsoup-1.15.3.jar:.:bin com.tba.Main
+```shell
+$ java -cp libs/sqlite-jdbc-3.30.1.jar:.:libs/jsoup-1.15.3.jar:.:bin com.tba.Main
 Jan 22, 2023 5:21:35 PM com.tba.database.DatabaseAdapter <init>
 INFO: Database connection initialized successfully.
 Jan 22, 2023 5:21:35 PM com.tba.Main main
